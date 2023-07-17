@@ -137,7 +137,7 @@ class Vocabulary(object):
     def load_vectors(self):
         vector_filename = self.vector_filename
         embed_size = self.embed_size
-        f = open(vector_filename, 'r')
+        f = open(vector_filename, 'r', encoding='utf-8', errors='ignore')
 
         data = []
         data_rare = []
